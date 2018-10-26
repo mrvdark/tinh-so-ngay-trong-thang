@@ -4,13 +4,13 @@ public class DaysInMonth {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Which month that you want to count days? ");
+        System.out.print("bạn muốn tính số ngày của tháng nào ? ");
         int month = scanner.nextInt();
 
         String daysInMonth;
         switch (month) {
             case 2:
-                daysInMonth = "28 or 29";
+                daysInMonth = "28 hoặc 29. Tùy vào năm đó nhuận hay không";
                 break;
             case 1:
             case 3:
@@ -31,7 +31,7 @@ public class DaysInMonth {
                 daysInMonth = "";
         }
 
-        if (daysInMonth != "") System.out.printf("The month '%d' has %s days!", month, daysInMonth);
+        if (daysInMonth != "") System.out.printf(" Tháng '%d' có %s ngày !", month, daysInMonth);
         else System.out.print("Invalid input!");
 
     }
